@@ -1,0 +1,71 @@
+/*
+ Theme Name:   Better Days Baking
+ Theme URI:    https://github.com/aniagaska
+ Description:  Twenty Twenty One Child Theme
+ Author:       Anna Stypulkowski
+ Author URI:   http://aniagaska.github.io
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwentyonechild
+*/
+
+/* Type */
+
+html {
+    font-size: 112.5%;
+  }
+  
+  h1 {
+    font-size: 1.802rem;
+  }
+  
+  h2 {
+    font-size: 1.602rem;
+  }
+  
+  h3 {
+    font-size: 1.424rem;
+  }
+  
+  h4 {
+    font-size: 1.266rem;
+  }
+  
+  h5 {
+    font-size: 1.125rem;
+  }
+  
+  @media only screen and (min-width: 652px) {
+    :root {
+      --global--font-size-xl: 2.027rem;
+      --global--font-size-xxl: 2.281rem;
+      --global--font-size-xxxl: 2.566rem;
+      --heading--font-size-h3: 1.424rem;
+      --heading--font-size-h2: 1.602rem;
+    }
+  }
+
+  /* Links */
+
+a {
+    text-underline-offset: 4px;
+    text-decoration-thickness: .15rem;
+  }
+  
+  a:hover,
+  .primary-navigation a:hover {
+    text-decoration-style: solid;
+    /* text-decoration: none; */
+    font-weight: bold;
+  }
+  
+  /* Blog Post  */
+  
+  /* Blog Post Title  */
+  
+  .singular .entry-header {
+    padding-bottom: calc(1 * var(--global--spacing-vertical));
+  }
