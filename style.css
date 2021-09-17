@@ -14,58 +14,121 @@
 
 /* Type */
 
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
 html {
-    font-size: 112.5%;
-  }
-  
-  h1 {
-    font-size: 1.802rem;
-  }
-  
-  h2 {
-    font-size: 1.602rem;
-  }
-  
-  h3 {
-    font-size: 1.424rem;
-  }
-  
-  h4 {
-    font-size: 1.266rem;
-  }
-  
-  h5 {
-    font-size: 1.125rem;
-  }
-  
-  @media only screen and (min-width: 652px) {
-    :root {
-      --global--font-size-xl: 2.027rem;
-      --global--font-size-xxl: 2.281rem;
-      --global--font-size-xxxl: 2.566rem;
-      --heading--font-size-h3: 1.424rem;
-      --heading--font-size-h2: 1.602rem;
-    }
-  }
+  font-size: 100%;
+}
 
-  /* Links */
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+p, li {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+h1, h2 {
+  font-size: 4.209rem;
+  font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif;
+  line-height: 1;
+}
+
+h3, h4, h5, h6 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+}
+
+small, .text_small {
+  font-size: 0.75rem;
+}
+
+.entry-header, .entry-title {
+  font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif;
+}
+
+.site-name, .site-title {
+  font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif;
+}
+
+.site-description {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  line-height: 1;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.powered-by {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  line-height: 1;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.primary-navigation a,
+.cat-item a {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* I cannot figure out this post list at the bottom of the page!!!
+.wp-block-latest-posts__list a, 
+.wp-block-latest-posts a {
+  font-family: Georgia, Times, "Times New Roman", serif;
+} */
+
+.widget-area h2 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.dropdown-icon {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+
+
+/* @media only screen and (min-width: 652px) {
+  :root {
+    --global--font-size-xl: 2.027rem;
+    --global--font-size-xxl: 2.281rem;
+    --global--font-size-xxxl: 2.566rem;
+    --heading--font-size-h3: 1.424rem;
+    --heading--font-size-h2: 1.602rem;
+  }
+} */
+
+/* Links */
 
 a {
-    text-underline-offset: 4px;
-    text-decoration-thickness: .15rem;
-  }
-  
-  a:hover,
-  .primary-navigation a:hover {
-    text-decoration-style: solid;
-    /* text-decoration: none; */
-    font-weight: bold;
-  }
-  
-  /* Blog Post  */
-  
-  /* Blog Post Title  */
-  
-  .singular .entry-header {
-    padding-bottom: calc(1 * var(--global--spacing-vertical));
-  }
+  text-underline-offset: 4px;
+  text-decoration-thickness: .15rem;
+}
+
+/* a:hover, .primary-navigation a:hover {
+
+} */
+
+/* Blog Post  */
+
+/* Blog Post Title  */
+
+.singular .entry-header {
+  padding-bottom: calc(1 * var(--global--spacing-vertical));
+}
