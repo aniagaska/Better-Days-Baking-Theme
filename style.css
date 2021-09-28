@@ -28,7 +28,6 @@ p, li {
 }
 
 h1, h2 {
-  font-size: 4.209rem;
   font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif;
   line-height: 1;
 }
@@ -38,29 +37,14 @@ h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-h2 {
-  font-size: 3.157rem;
-}
-
-h3 {
-  font-size: 2.369rem;
-}
-
-h4 {
-  font-size: 1.777rem;
-}
-
-h5 {
-  font-size: 1.333rem;
-}
-
-small, .text_small {
-  font-size: 0.75rem;
-}
-
-.entry-header, .entry-title {
+.entry-header, .entry-title  {
   font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif;
 }
+
+.post-title{
+  font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif !important;
+}
+/* I'm not proud of having to use important but it's the only way I could figure it out */
 
 .site-name, .site-title {
   font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif;
@@ -85,11 +69,10 @@ small, .text_small {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-/* I cannot figure out this post list at the bottom of the page!!!
-.wp-block-latest-posts__list a, 
-.wp-block-latest-posts a {
+
+.wp-block-latest-posts__list li a{
   font-family: Georgia, Times, "Times New Roman", serif;
-} */
+} 
 
 .widget-area h2 {
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -102,28 +85,63 @@ small, .text_small {
   font-weight: bold;
 }
 
-
-
-/* @media only screen and (min-width: 652px) {
-  :root {
-    --global--font-size-xl: 2.027rem;
-    --global--font-size-xxl: 2.281rem;
-    --global--font-size-xxxl: 2.566rem;
-    --heading--font-size-h3: 1.424rem;
-    --heading--font-size-h2: 1.602rem;
-  }
-} */
-
 /* Links */
 
-a {
-  text-underline-offset: 4px;
+.entry-title a,
+.entry-title a:link {
+  text-underline-offset: .6rem;
+  text-decoration-thickness: .4rem;
+  /* this isn't working, should i put it lower down?  */
+  color: black;
+  line-height: 1.75;
+  font-weight: normal;
+}
+
+.site .entry-title a:focus:not(.wp-block-button__link):not(.wp-block-file__button), 
+.site .entry-title a:hover:not(.wp-block-button__link):not(.wp-block-file__button),
+.site .entry-title a:active:not(.wp-block-button__link):not(.wp-block-file__button) {
+  background-color: black;
+  color: #c09164 !important;
+  outline: none;
+  text-decoration: none;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+
+a:not(.wp-block-button__link):not(.wp-block-file__button),
+a:link:not(.wp-block-button__link):not(.wp-block-file__button) {
+  text-underline-offset: .15rem;
   text-decoration-thickness: .15rem;
 }
 
-/* a:hover, .primary-navigation a:hover {
+.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button), 
+.site a:hover:not(.wp-block-button__link):not(.wp-block-file__button),
+.site a:active:not(.wp-block-button__link):not(.wp-block-file__button) {
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-} */
+.primary-navigation a,
+.primary-navigation a:link {
+  text-underline-offset: .15rem;
+  text-decoration-thickness: .15rem;
+}
+
+.primary-navigation a:focus,
+.primary-navigation a:hover,
+.primary-navigation a:active {
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* make the borders and lines the same width as the link underlines */
+
+
 
 /* Blog Post  */
 
@@ -131,4 +149,8 @@ a {
 
 .singular .entry-header {
   padding-bottom: calc(1 * var(--global--spacing-vertical));
+}
+
+.entry-title {
+  text-align: center;
 }
