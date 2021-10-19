@@ -70,7 +70,8 @@ h3, h4, h5, h6 {
 }
 
 
-.wp-block-latest-posts__list li a{
+.wp-block-latest-posts__list li a,
+.comment-meta .comment-author .fn {
   font-family: Georgia, Times, "Times New Roman", serif;
 } 
 
@@ -87,54 +88,67 @@ h3, h4, h5, h6 {
 
 /* Links */
 
-.entry-title a,
-.entry-title a:link {
-  text-underline-offset: .6rem;
-  text-decoration-thickness: .4rem;
-  /* this isn't working, should i put it lower down?  */
-  color: black;
-  line-height: 1.75;
-  font-weight: normal;
+a:not(.wp-block-button__link):not(.wp-block-file__button),
+a:link:not(.wp-block-button__link):not(.wp-block-file__button) {
+  text-decoration: underline;
 }
 
-.site .entry-title a:focus:not(.wp-block-button__link):not(.wp-block-file__button), 
-.site .entry-title a:hover:not(.wp-block-button__link):not(.wp-block-file__button),
-.site .entry-title a:active:not(.wp-block-button__link):not(.wp-block-file__button) {
+.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
   background-color: black;
   color: #c09164 !important;
   outline: none;
   text-decoration: none;
-  padding-left: .5rem;
-  padding-right: .5rem;
 }
 
-
-a:not(.wp-block-button__link):not(.wp-block-file__button),
-a:link:not(.wp-block-button__link):not(.wp-block-file__button) {
-  text-underline-offset: .15rem;
-  text-decoration-thickness: .15rem;
-}
-
-.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button), 
 .site a:hover:not(.wp-block-button__link):not(.wp-block-file__button),
 .site a:active:not(.wp-block-button__link):not(.wp-block-file__button) {
   outline: none;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.primary-navigation a,
+/* .primary-navigation a,
 .primary-navigation a:link {
-  text-underline-offset: .15rem;
-  text-decoration-thickness: .15rem;
+  text-decoration: none;
 }
 
-.primary-navigation a:focus,
-.primary-navigation a:hover,
-.primary-navigation a:active {
+.primary-navigation a:focus {
+  background-color: black;
+  color: #c09164 !important;
   outline: none;
   text-decoration: none;
-  font-weight: bold;
+}
+.primary-navigation a:hover,
+.primary-navigation a:active {
+  text-decoration: underline;
+} */
+
+.entry-title a,
+.entry-title a:link {
+  color: black;
+  line-height: 1.75;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.site .entry-title a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
+  background-color: black;
+  color: #c09164 !important;
+  outline: none;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+/* 
+.site .entry-title a:hover:not(.wp-block-button__link):not(.wp-block-file__button) {
+  text-decoration: none;
+} */
+
+.site .entry-title a:active:not(.wp-block-button__link):not(.wp-block-file__button) {
+  background-color: black;
+  color: #c09164 !important;
+  outline: none;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 
@@ -154,3 +168,18 @@ a:link:not(.wp-block-button__link):not(.wp-block-file__button) {
 .entry-title {
   text-align: center;
 }
+
+.site-main > article > .entry-footer {
+  border-bottom: .25rem solid black;
+}
+
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+  height: 4px;
+}
+
+@media (min-width: 500px){
+  /* 500px or larger --- mobile first */
+  .entry-header .post-thumbnail {
+    max-width: 50%;
+  }
+  }
