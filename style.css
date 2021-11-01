@@ -46,7 +46,7 @@ h3, h4, h5, h6 {
 }
 /* I'm not proud of having to use important but it's the only way I could figure it out */
 
-.site-name, .site-title {
+.site-name, .site-title, .author-title {
   font-family: 'Sancreek', Georgia, Times, "Times New Roman", serif;
 }
 
@@ -106,22 +106,6 @@ a:link:not(.wp-block-button__link):not(.wp-block-file__button) {
   text-decoration: none;
 }
 
-/* .primary-navigation a,
-.primary-navigation a:link {
-  text-decoration: none;
-}
-
-.primary-navigation a:focus {
-  background-color: black;
-  color: #c09164 !important;
-  outline: none;
-  text-decoration: none;
-}
-.primary-navigation a:hover,
-.primary-navigation a:active {
-  text-decoration: underline;
-} */
-
 .entry-title a,
 .entry-title a:link {
   color: black;
@@ -137,11 +121,6 @@ a:link:not(.wp-block-button__link):not(.wp-block-file__button) {
   padding-left: .5rem;
   padding-right: .5rem;
 }
-
-/* 
-.site .entry-title a:hover:not(.wp-block-button__link):not(.wp-block-file__button) {
-  text-decoration: none;
-} */
 
 .site .entry-title a:active:not(.wp-block-button__link):not(.wp-block-file__button) {
   background-color: black;
